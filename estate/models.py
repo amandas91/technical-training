@@ -1,4 +1,6 @@
 from odoo import fields, models
+from datetime import datetime
+
 class TestModel(models.Model):
     _name = "test_model"
     _description = "Test Model"

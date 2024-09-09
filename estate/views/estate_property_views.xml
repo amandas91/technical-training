@@ -5,6 +5,16 @@
         <field name="name">List Real Estate</field>
         <field name="res_model">test_model</field>
         <field name="view_mode">tree,form</field>
-        
     </record>
+
+    <record id="view_model_tree" model="ir.ui.view">
+        <field name="name">test_model.tree</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            <tree string="Model Tree View">
+                <field name="title"/>
+            </tree>
+        </field>
+    </record>
+
 </odoo>
