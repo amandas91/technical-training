@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     
-    <menuitem id="menu_root" name="Real Estate Menu">
-        <menuitem id="first_level_menu" name="First Level">
-            <menuitem id="model_menu_action" action="test_model_action"/>
-        </menuitem>
-    </menuitem>
-    
-
     <record id="test_model_action" model="ir.actions.act_window">
-        <field name="name">Real Estate</field>
+        <field name="name">List Real Estate</field>
         <field name="res_model">test_model</field>
         <field name="view_mode">tree,form</field>
         
     </record>
-    
 </odoo>
