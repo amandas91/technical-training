@@ -4,11 +4,19 @@ class TestModel(models.Model):
     _name = "test_model"
     _description = "Test Model"
 
-    title = fields.Char()
+    title = fields.Char(required=True)
     description = fields.Char()
     post_code = fields.Char()
     expected_price = fields.Float()
-    bedrooms = fields.Integer()
+    bedrooms = fields.Integer(default=2)
     facades = fields.Integer()
-    garder = fields.Boolean()
+    garden = fields.Boolean()
+    garden_area = fields.Float()
+    active = fields.Boolean()
+    selling_price = fields.Float(default=1000.00, readonly=True)
+    #avaliable_from = fields.Datetime("Last Seen", default=fields.Date.today())
+    living_area = fields.Integer()
+    garage = fields.Boolean()
+    status = fields.Char()
+    
     
