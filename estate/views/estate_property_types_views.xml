@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="model_action_settings" model="ir.actions.act_window">
+        <field name="name">Property Types</field>
+        <field name="res_model">real_estate_propet_type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+</odoo>
