@@ -6,12 +6,15 @@
     </menuitem>-->
 
     <!-- Main Menu -->
-    <menuitem id="menu_main" name="My Main Menu" sequence="1" />
+    <menuitem id="menu_main" name="Real Estate" sequence="1" />
 
     <!-- First Level Submenu -->
-    <menuitem id="menu_first_level" name="First Level Submenu" parent="menu_main" sequence="1"/>
+    <menuitem id="menu_real_estate" name="Real Estate" parent="menu_main" sequence="1"/>
+    <menuitem id="menu_settings" name="Settings" parent="menu_main" sequence="2"/>
 
     <!-- Second Level Submenu -->
-    <menuitem id="menu_second_level" name="Second Level Submenu" parent="menu_first_level" sequence="1" action="test_model_action"/>
+    <menuitem id="menu_second_real_estate" name="List Real Estate" parent="menu_real_estate" sequence="1" 	action="test_model_action"/>
+
+    <menuitem id="menu_second_settings" name="Property Types" parent="menu_settings" sequence="2" 	action="model_action_settings"/>
     
 </odoo>
