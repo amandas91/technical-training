@@ -3,7 +3,7 @@
     <!-- Main Menu -->
     <menuitem id="menu_main" name="Real Estate" >
         
-        <menuitem id="menu_real_estate" name="Advertaisment" >
+        <menuitem id="menu_real_estate" name="Advertisement" >
             <menuitem id="menu_second_real_estate" name="List Real Estate" action="test_model_action"/>
         </menuitem>
         
@@ -11,9 +11,10 @@
             <menuitem id="menu_second_settings" name="Property Types" action="model_action_settings"/>
         </menuitem>
 
+        <menuitem id="menu_settings_tags" name="Tags">
+            <menuitem id="menu_second_settings_tags" name="Property Tags"/>
+        </menuitem>
+
     </menuitem>
-
-
-    
     
 </odoo>

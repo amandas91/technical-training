@@ -20,13 +20,24 @@ class TestModel(models.Model):
     living_area = fields.Integer()
     garage = fields.Boolean()
     status = fields.Char()
+    
+    buyer = fields.Many2one('res.users', copy=False)
+
+    real_estate_property_type_id = fields.Many2one('real.estate.propety.type', string="Property Types")
+    res_partner_id = fields.Many2one('res.partner', string="Salesperson")
+    tag_ids = fields.Many2many('real.estate.propety.tags', string="Property Tags")
 
 class RealEstatePropertyType (models.Model):
-    _name = "real.estate.propet.type"
+    _name = "real.estate.propety.type"
     _description = "the Real Estate Property Type table"
 
     name = fields.Char(required=True)
-    
+
+class RealEstatePropertyTags (models.Model):
+    _name = "real.estate.propety.tags"
+    _description = "The Real Estate Property Tags table"
+
+    name = fields.Char(required=True)
     
 
     
