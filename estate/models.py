@@ -3,7 +3,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 class TestModel(models.Model):
-    _name = "test_model"
+    _name = "test.model"
     _description = "Test Model"
 
     title = fields.Char(required=True)
@@ -22,7 +22,7 @@ class TestModel(models.Model):
     status = fields.Char()
 
 class RealEstatePropertyType (models.Model):
-    _name = "real_estate_propet_type"
+    _name = "real.estate.propet.type"
     _description = "the Real Estate Property Type table"
 
     name = fields.Char(required=True)
