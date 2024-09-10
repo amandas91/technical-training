@@ -38,6 +38,23 @@
                                 <field name="description"/>
                             </page>
                         </notebook>
+                        <group>
+                            <field name="post_code" />
+                            <field name="expected_price" />
+                            <field name="bedrooms" />
+                             <field name="facades" />
+                             <field name="garden" />
+                            <field name="garden_area" />
+                            
+                        </group>
+                         <group>
+                            <field name="active" />
+                            <field name="selling_price" />
+                            <field name="available_from" />
+                            <field name="living_area" />
+                            <field name="garage" />
+                            <field name="status" />
+                        </group>
                     </group>
                 </sheet>
             </form>
