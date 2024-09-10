@@ -10,6 +10,6 @@
     <!-- Second Level Submenu -->
     <menuitem id="menu_second_real_estate" name="List Real Estate" parent="menu_real_estate" sequence="1" 	action="test_model_action"/>
 
-    <menuitem id="menu_second_settings" name="Property Types" parent="menu_settings" sequence="1" 	action="test_model_action"/>
+    <menuitem id="menu_second_settings" name="Property Types" parent="menu_settings" sequence="1" 	action="model_action_settings"/>
     
 </odoo>
