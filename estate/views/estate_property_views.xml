@@ -38,8 +38,9 @@
                             <field name="post_code" />
                             <field name="expected_price" />
                             <field name="bedrooms" />
-                             <field name="facades" />
-                             <field name="garden" />
+                            <field name="facades" />
+                            <field name="garden" />
+                            <field name="garden_orientation" />
                             <field name="garden_area" />
                             
                         </group>
@@ -50,6 +51,8 @@
                             <field name="living_area" />
                             <field name="garage" />
                             <field name="status" />
+                            <field name="total_area" />
+                             
                         </group>
                         <notebook>
                             <page string="Description">
