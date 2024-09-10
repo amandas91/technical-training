@@ -61,4 +61,23 @@
         </field>
     </record>
 
+    <record id="view_model_search" model="ir.ui.view">
+        <field name="name">test_model.search</field>
+        <field name="model">test_model</field>
+        <field name="arch" type="xml">
+            
+             <search string="Model Search View">
+                <field name="title"/>
+                <field name="available_from"/>
+                <field name="status"/>
+
+                 <separator/>
+                    <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                    
+            </search>
+        </field>
+    </record>
+
+   
+
 </odoo>
