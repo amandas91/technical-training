@@ -5,5 +5,4 @@
         <field name="res_model">real_estate_propet_type</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
 </odoo>
