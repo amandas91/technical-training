@@ -20,5 +20,13 @@ class TestModel(models.Model):
     living_area = fields.Integer()
     garage = fields.Boolean()
     status = fields.Char()
+
+class RealEstatePropertyType (models.Model):
+    _name = "real_estate_propet_type"
+    _description = "the Real Estate Property Type table"
+
+    name = fields.Char(required=True)
     
+    
+
     
