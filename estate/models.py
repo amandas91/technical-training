@@ -7,7 +7,7 @@ class TestModel(models.Model):
     _description = "Test Model"
 
     title = fields.Char(required=True)
-    description = fields.Char()
+    description = fields.Text()
     post_code = fields.Char()
     expected_price = fields.Float()
     bedrooms = fields.Integer(default=2)
