@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!--<menuitem id="menu_root" name="Real Estate">
-            <menuitem id="model_menu_action" action="test_model_action" name="Real Estate" sequence="1"/>
-            <menuitem id="menu_action_settings" action="model_action_settings" name="Prototype" sequence="2"/>
-    </menuitem>-->
-
     <!-- Main Menu -->
     <menuitem id="menu_main" name="Real Estate" sequence="1" />
 
     <!-- First Level Submenu -->
     <menuitem id="menu_real_estate" name="Real Estate" parent="menu_main" sequence="1"/>
-    <menuitem id="menu_settings" name="Settings" parent="menu_main" sequence="2"/>
+    <menuitem id="menu_settings" name="Settings" parent="menu_main" sequence="1"/>
 
     <!-- Second Level Submenu -->
     <menuitem id="menu_second_real_estate" name="List Real Estate" parent="menu_real_estate" sequence="1" 	action="test_model_action"/>
 
-    <menuitem id="menu_second_settings" name="Property Types" parent="menu_settings" sequence="2" 	action="model_action_settings"/>
+    <menuitem id="menu_second_settings" name="Property Types" parent="menu_settings" sequence="1" 	action="test_model_action"/>
     
 </odoo>
