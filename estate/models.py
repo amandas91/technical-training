@@ -4,7 +4,7 @@ from dateutil.relativedelta import relativedelta
 
 class TestModel(models.Model):
     _name = "test.model"
-    _description = "Test Model"
+    _description = "Estate Model"
 
     title = fields.Char(required=True)
     description = fields.Text()
@@ -27,6 +27,8 @@ class TestModel(models.Model):
     res_partner_id = fields.Many2one('res.partner', string="Salesperson")
     tag_ids = fields.Many2many('real.estate.propety.tags', string="Property Tags")
 
+    offer_ids = fields.Many2many('real.estate.propety.offer', string="Property Offers")
+
 class RealEstatePropertyType (models.Model):
     _name = "real.estate.propety.type"
     _description = "the Real Estate Property Type table"
@@ -38,6 +40,27 @@ class RealEstatePropertyTags (models.Model):
     _description = "The Real Estate Property Tags table"
 
     name = fields.Char(required=True)
+
+class RealEstatePropertyOffer (models.Model):
+    _name = "real.estate.propety.offer"
+    _description = "The Real Estate Property Offer table"
+
+    price = fields.Float(required=True)
+
+    def _get_estados(self):
+        return [
+            ('accepted', 'Accepted'),
+            ('refused', 'Refused')
+        ]
+
+    status = fields.Selection(
+        selection='_get_estados', 
+        string="Status", 
+        default='accepted'
+    )
+    
+    partner_id = fields.Many2one('res.partner', string="Partner")
+    property_id = fields.Many2one('test.model', string="Estate Model")
     
 
     

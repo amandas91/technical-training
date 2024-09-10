@@ -9,11 +9,9 @@
         
         <menuitem id="menu_settings" name="Settings">
             <menuitem id="menu_second_settings" name="Property Types" action="model_action_settings"/>
+            <menuitem id="menu_second_settings_tags" name="Property Tags" action="model_action_settings_tags"/>
         </menuitem>
 
-        <menuitem id="menu_settings_tags" name="Tags">
-            <menuitem id="menu_second_settings_tags" name="Property Tags"/>
-        </menuitem>
 
     </menuitem>
     
